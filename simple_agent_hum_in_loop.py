@@ -78,9 +78,9 @@ graph_builder.add_node("bot", bot)
 graph_builder.set_entry_point("bot")
 
 # ADD MEMORY NODE
-from langgraph.checkpoint.sqlite import SqliteSaver
+from langgraph.checkpoint.memory import MemorySaver
 
-memory = SqliteSaver.from_conn_string(":memory:")
+memory = MemorySaver()
 
 # STEP 5: Compile the graph
 graph = graph_builder.compile(
