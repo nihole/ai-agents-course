@@ -10,4 +10,6 @@ tavily-python
 openai
 SQLAlchemy
 langgraph[checkpoint]
+pandas
+pydantic
 
